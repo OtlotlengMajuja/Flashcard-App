@@ -31,7 +31,8 @@ button {
   transition: all 0.3s easeS;
 }
 
-.add-card-con button {
+.add-card-con button,
+.modal button {
   font-size: 15px;
   background-color: #4caf50;
   padding: 10px 20px;
@@ -143,4 +144,33 @@ label {
   color: #2d3140;
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+textarea:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+textarea:focus {
+  border-color: #2d3140;
+}
+
+.hide {
+  display: none;
+}
+
+.add-card-con button:hover,
+.modal button:hover,
+#close-btn button:hover,
+.show-hide-btn:hover {
+  background-color: #368339 !important;
 }
