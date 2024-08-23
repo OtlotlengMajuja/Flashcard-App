@@ -118,3 +118,29 @@ button {
   color: #2d3140;
   margin-bottom: 50px;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+#error {
+  color: #f34444;
+}
+
+#close-btn {
+  font-size: 22px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+label {
+  color: #2d3140;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
