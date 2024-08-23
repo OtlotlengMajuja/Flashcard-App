@@ -20,8 +20,40 @@
           <p class="que-div">Question</p>
           <p class="ans-div">Answer</p>
           <button class="show-hide-btn">Show/Hide</button>
-          <div class="btns-con"></div>
+          <div class="btns-con">
+            <button class="edit">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+            <button class="delete">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div class="modal" id="add-card-modal">
+        <h2>Add Flashcard</h2>
+        <div class="wrapper">
+          <div class="error-con">
+            <span class="hide" id="error"> Input fields cannot be empty! </span>
+          </div>
+          <i class="fa-regular fa-circle-xmark" id="close-btn"></i>
+        </div>
+
+        <label for="question">Question:</label>
+        <textarea
+          id="question"
+          class="input"
+          placeholder="Type the question here..."
+          rows="3"
+        ></textarea>
+        <label for="answer">Answer:</label>
+        <textarea
+          id="answer"
+          class="input"
+          placeholder="Type the answer here..."
+          rows="4"
+        ></textarea>
       </div>
     </div>
     <script src="script.js"></script>
