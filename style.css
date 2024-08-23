@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: cornsilk;
+  background-color: #f7f9f7;
 }
 
 .container {
@@ -29,4 +29,42 @@ button {
   cursor: pointer;
   color: #fff;
   transition: all 0.3s easeS;
+}
+
+.add-card-con button {
+  font-size: 15px;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.cards-list {
+  background-color: #fff;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px 20px 10px;
+  width: 31%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.que-div {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #2d3140;
+  word-wrap: break-word;
+}
+
+.ans-div {
+  font-weight: 400;
+  color: #2d3140;
+  word-wrap: break-word;
+  margin: 10px 0 14px;
+  line-height: 22px;
+  font-size: 14px;
 }
