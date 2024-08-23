@@ -1,1 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Anek Devanagar", sans-serif;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+.container {
+  width: 90%;
+  max-width: 992px;
+  margin: auto;
+}
+
+.add-card-con {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s easeS;
+}
