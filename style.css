@@ -68,3 +68,53 @@ button {
   line-height: 22px;
   font-size: 14px;
 }
+
+.show-hide-btn {
+  background-color: #4caf50;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.btns-con {
+  text-align: right;
+}
+
+.edit,
+.delete {
+  background-color: transparent;
+  margin: 10px 4px;
+  font-size: 20px;
+}
+
+.edit {
+  color: #4caf50;
+}
+
+.delete {
+  color: #f34444;
+}
+
+.modal {
+  width: 90%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 35px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #2d3140;
+  margin-bottom: 50px;
+}
