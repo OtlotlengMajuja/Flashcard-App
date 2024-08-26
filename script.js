@@ -28,4 +28,33 @@ closeBtn.addEventListener('click', () => {
     if (editBool) {
         editBool = false;
     }
+});
+
+saveBtn.addEventListener('click', () => {
+    // Save the flashcard
+    let tempQuestion = question.value.trim();
+    let tempAnswer = answer.value.trim();
+    if (!tempQuestion || !tempAnswer) {
+        // Display error message if question or answer is empty
+        errorMessage.classList.remove('hide');
+    } else {
+        if (editBool) {
+            // If editing an existing flashcard, remove the original flashcard from the array
+            flashcards = flashcards.filter(flashcard =>
+                flashcard.id !== originalId
+            );
+        }
+        let id = Date.now();
+        // Add the new flashcard to the array
+        flashcards.push({ id, question: tempQuestion, answer: tempAnswer });
+        // Save the flashcards array to localStorage
+        localStorage.setItem('flashcards', JSON.stringify(flashcards));
+        container.classList.remove('hide');
+        errorMessage.classList.add('hide');
+        viewList();
+        question.value = "";
+        answer.value = "";
+        editBool = false;
+        addQuestionModal.classList.add('hide');
+    }
 })
