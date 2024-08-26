@@ -57,4 +57,16 @@ saveBtn.addEventListener('click', () => {
         editBool = false;
         addQuestionModal.classList.add('hide');
     }
-})
+});
+
+// Function to display flashcards list
+function viewList() {
+    const cardsList = document.querySelector('cards-list');
+    cardsList.innerHTML = '';
+    flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
+    flashcards.forEach(flashcard => {
+        const div = document.createElement("div");
+        div.classList.add('card');
+        div.innerHTML = ``
+    })
+}
