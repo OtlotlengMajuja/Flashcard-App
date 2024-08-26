@@ -1,7 +1,7 @@
 // Selecting DOM elements
 const container = document.querySelector(".container");
 const addQuestionModal = document.getElementById("add-card-modal");
-const cardButton = document.getElementById("save-btn");
+const saveBtn = document.getElementById("save-btn");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 const errorMessage = document.getElementById("error");
@@ -20,3 +20,12 @@ addQuestion.addEventListener('click', () => {
     answer.value = "";
     addQuestionModal.classList.remove('hide');
 });
+
+closeBtn.addEventListener('click', () => {
+    // Close the add question modal and show the container
+    container.classList.remove('hide');
+    addQuestionModal.classList.add('hide');
+    if (editBool) {
+        editBool = false;
+    }
+})
